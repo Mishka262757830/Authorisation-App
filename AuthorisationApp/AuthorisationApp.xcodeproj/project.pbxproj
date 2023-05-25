@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		663F23802A1F4F41005C18DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F237F2A1F4F41005C18DC /* AppDelegate.swift */; };
 		663F23822A1F4F41005C18DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F23812A1F4F41005C18DC /* SceneDelegate.swift */; };
-		663F23842A1F4F41005C18DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F23832A1F4F41005C18DC /* ViewController.swift */; };
+		663F23842A1F4F41005C18DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F23832A1F4F41005C18DC /* RegistrationViewController.swift */; };
 		663F23872A1F4F41005C18DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F23852A1F4F41005C18DC /* Main.storyboard */; };
 		663F23892A1F4F42005C18DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F23882A1F4F42005C18DC /* Assets.xcassets */; };
 		663F238C2A1F4F42005C18DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F238A2A1F4F42005C18DC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		663F237C2A1F4F41005C18DC /* AuthorisationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthorisationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		663F237F2A1F4F41005C18DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		663F23812A1F4F41005C18DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		663F23832A1F4F41005C18DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		663F23832A1F4F41005C18DC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		663F23862A1F4F41005C18DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		663F23882A1F4F42005C18DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		663F238B2A1F4F42005C18DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		663F237E2A1F4F41005C18DC /* AuthorisationApp */ = {
 			isa = PBXGroup;
 			children = (
-				663F237F2A1F4F41005C18DC /* AppDelegate.swift */,
-				663F23812A1F4F41005C18DC /* SceneDelegate.swift */,
-				663F23832A1F4F41005C18DC /* ViewController.swift */,
-				663F23852A1F4F41005C18DC /* Main.storyboard */,
-				663F23882A1F4F42005C18DC /* Assets.xcassets */,
-				663F238A2A1F4F42005C18DC /* LaunchScreen.storyboard */,
-				663F238D2A1F4F42005C18DC /* Info.plist */,
+				663F23932A1F5090005C18DC /* View Controllers */,
+				663F23972A1F5100005C18DC /* Models */,
+				663F23942A1F50A3005C18DC /* Storyboards */,
+				663F23962A1F50E8005C18DC /* Resources */,
+				663F23952A1F50E0005C18DC /* App */,
 			);
 			path = AuthorisationApp;
+			sourceTree = "<group>";
+		};
+		663F23932A1F5090005C18DC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				663F23832A1F4F41005C18DC /* RegistrationViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		663F23942A1F50A3005C18DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				663F23852A1F4F41005C18DC /* Main.storyboard */,
+				663F238A2A1F4F42005C18DC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		663F23952A1F50E0005C18DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				663F237F2A1F4F41005C18DC /* AppDelegate.swift */,
+				663F23812A1F4F41005C18DC /* SceneDelegate.swift */,
+				663F238D2A1F4F42005C18DC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		663F23962A1F50E8005C18DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				663F23882A1F4F42005C18DC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		663F23972A1F5100005C18DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663F23842A1F4F41005C18DC /* ViewController.swift in Sources */,
+				663F23842A1F4F41005C18DC /* RegistrationViewController.swift in Sources */,
 				663F23802A1F4F41005C18DC /* AppDelegate.swift in Sources */,
 				663F23822A1F4F41005C18DC /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZ59UG65M4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorisationApp/Info.plist;
+				INFOPLIST_FILE = AuthorisationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZ59UG65M4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorisationApp/Info.plist;
+				INFOPLIST_FILE = AuthorisationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
